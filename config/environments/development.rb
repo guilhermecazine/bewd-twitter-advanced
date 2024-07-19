@@ -56,4 +56,9 @@ Rails.application.configure do
   config.generators do |g|
     g.test_framework nil
   end
+
+  # Configure ActiveStorage to use local storage
+  config.active_storage.service = :local
+
+  config.active_storage.service = :amazon
 end
